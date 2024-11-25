@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let pattern = '';
+        const rows = 5; // Number of rows for the pyramid
+
+        for (let i = 1; i <= rows; i++) {
+            for (let j = 1; j <= i; j++) {
+                pattern += (j % 2 === 1) ? '1' : '0'; // Alternating between 1 and 0
+            }
+            pattern += '<br>'; // Move to the next line after each row
+        }
+
+        document.write(pattern);
+
+
+    </script>
+</body>
+</html>

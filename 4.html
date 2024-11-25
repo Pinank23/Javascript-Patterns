@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // let pattern = '';
+    //     const rows = 5; // Number of rows for the pyramid
+        
+    //     for (let i = 1; i <= rows; i++) {
+    //         // Add spaces for right alignment
+    //         for (let j = rows; j > i; j--) {
+    //             pattern += ' ';
+    //         }
+    //         // Add numbers
+    //         for (let k = 1; k <= i; k++) {
+    //             pattern += k;
+    //         }
+    //         pattern += '\n'; // Move to the next line after each row
+    //     }
+        
+    //     console.log(pattern);
+
+        let patterns = '';
+        const row = 5; // Number of rows for the pyramid
+        
+        for (let i = 1; i <= row; i++) {
+            // Add spaces for right alignment
+            for (let j = row; j > i; j--) {
+                patterns += '&nbsp; ' ; // Use &nbsp; for a non-breaking space
+            }
+            // Add numbers
+            for (let k = 1; k <= i; k++) {
+                patterns += k + ' ';
+            }
+            patterns += '<br>'; // Move to the next line after each row
+        }
+        
+        document.write(patterns);
+        
+    </script>
+</body>
+</html>

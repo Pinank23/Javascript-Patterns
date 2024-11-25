@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>123321</title>
+</head>
+<body>
+  <script>
+
+function printPyramid(rows) {
+  for (let i = 1; i <= rows; i++) {
+    let row = "";
+    for (let j = 1; j <= rows - i; j++) {
+      row += "&nbsp; &nbsp; "; // add spaces for alignment
+    }
+    for (let k = 1; k <= i; k++) {
+      row += k + "&nbsp;&nbsp;";
+    }
+    for (let l = i - 1; l >= 1; l--) {
+      row += l + "&nbsp;&nbsp;";
+    }
+    document.write(row + "<br>");
+  }
+}
+
+printPyramid(5);
+  </script>
+</body>
+</html>
